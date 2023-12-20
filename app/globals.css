@@ -37,7 +37,7 @@ body {
 
 
 .max-container {
-  @apply mx-auto max-w-[1440px];
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
 }
 
 .padding-container {
@@ -76,3 +76,14 @@ body {
   @apply absolute flex xl:w-full w-[80%] xl:h-full h-[590px] z-0;;
 }
 /* END: Hero styles */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
